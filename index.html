@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SenatorovAI — Data Science Division</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>SenatorovAI — AI подразделение IT-холдинга</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
-            background: #0f172a;
+            background: #0b1220;
             color: #f1f5f9;
             line-height: 1.6;
         }
         header {
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
+            background: linear-gradient(135deg, #0b1220, #111c33);
         }
         header h1 {
-            font-size: 3rem;
-            font-weight: 700;
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
         }
         header p {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 1.2rem;
             color: #cbd5e1;
-            max-width: 800px;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
         .btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
+            margin-top: 35px;
+            padding: 14px 32px;
             background: #2563eb;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
             transition: 0.3s ease;
         }
-        .btn:hover {
-            background: #1d4ed8;
-        }
+        .btn:hover { background: #1d4ed8; }
         section {
-            padding: 80px 20px;
-            max-width: 1200px;
+            padding: 90px 20px;
+            max-width: 1300px;
             margin: auto;
         }
         section h2 {
-            font-size: 2rem;
-            margin-bottom: 40px;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
             text-align: center;
+            font-weight: 700;
         }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            gap: 35px;
         }
         .card {
-            background: #1e293b;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            background: #111c33;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
             transition: transform 0.3s ease;
         }
-        .card:hover {
-            transform: translateY(-5px);
-        }
+        .card:hover { transform: translateY(-6px); }
         .card h3 {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             color: #3b82f6;
+            font-weight: 700;
         }
-        footer {
-            padding: 40px 20px;
-            text-align: center;
-            background: #0b1120;
-            color: #94a3b8;
-        }
-        footer a {
+        .contacts a {
+            display: block;
+            margin-bottom: 12px;
             color: #3b82f6;
             text-decoration: none;
+            font-weight: 500;
+        }
+        footer {
+            padding: 50px 20px;
+            text-align: center;
+            background: #060c18;
+            color: #94a3b8;
         }
     </style>
 </head>
@@ -90,69 +92,72 @@
 <header>
     <h1>SenatorovAI</h1>
     <p>
-        SenatorovAI is a structural Data Science division within an IT organization. 
-        We train specialists in applied machine learning and deliver commercial AI solutions for real businesses.
+        SenatorovAI — структурное AI‑подразделение IT‑организации.
+        Мы объединяем инженерное образование, прикладные исследования и реализацию коммерческих проектов
+        в области Data Science, машинного обучения и оптимизационных систем.
     </p>
-    <a href="https://github.com/SENATOROVAI" class="btn">Explore Our GitHub</a>
+    <a href="https://github.com/SENATOROVAI" class="btn">GitHub подразделения</a>
 </header>
 
 <section>
-    <h2>What We Do</h2>
+    <h2>Структура подразделения</h2>
     <div class="grid">
         <div class="card">
-            <h3>Education</h3>
-            <p>
-                Structured Data Science programs: optimization algorithms, linear algebra, ML systems, 
-                production deployment, and mathematical foundations.
-            </p>
+            <h3>ML Engineering</h3>
+            <p>Разработка продакшн‑систем: пайплайны обучения, MLOps, масштабируемые архитектуры и оптимизация вычислений.</p>
         </div>
         <div class="card">
-            <h3>Commercial Projects</h3>
-            <p>
-                Development of AI-driven solutions: predictive analytics, recommendation systems, 
-                optimization pipelines, and custom ML infrastructure.
-            </p>
+            <h3>Applied Research</h3>
+            <p>Глубокая проработка алгоритмов (LBFGS, SAG, SAGA), численные методы, линейная алгебра и оптимизация.</p>
         </div>
         <div class="card">
-            <h3>Research & Engineering</h3>
-            <p>
-                Deep research in optimization (LBFGS, SAG, SAGA), numerical linear algebra, 
-                scalable training systems, and high-performance ML architectures.
-            </p>
+            <h3>Data Science Education</h3>
+            <p>Системное обучение инженеров Data Science с акцентом на математику, алгоритмы и коммерческое применение.</p>
         </div>
     </div>
 </section>
 
 <section>
-    <h2>Our Philosophy</h2>
+    <h2>Коммерческие направления</h2>
     <div class="grid">
         <div class="card">
-            <h3>Engineering First</h3>
-            <p>We focus on production-ready systems, not toy notebooks.</p>
+            <h3>AI‑решения для бизнеса</h3>
+            <p>Прогнозирование, оптимизация процессов, рекомендательные системы, аналитика данных.</p>
         </div>
         <div class="card">
-            <h3>Mathematical Depth</h3>
-            <p>Every algorithm is understood from first principles — from gradients to Hessians.</p>
+            <h3>Разработка ML‑инфраструктуры</h3>
+            <p>Проектирование внутренней AI‑архитектуры компаний, автоматизация и внедрение систем.</p>
         </div>
         <div class="card">
-            <h3>Business Impact</h3>
-            <p>Models are valuable only when they create measurable business results.</p>
+            <h3>Консалтинг</h3>
+            <p>Экспертная поддержка IT‑команд и внедрение современных методов машинного обучения.</p>
         </div>
     </div>
 </section>
 
 <section>
-    <h2>Join the Division</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-        SenatorovAI is not just a school — it is a structured AI division inside an IT ecosystem. 
-        We develop engineers capable of building scalable ML systems and executing high-level commercial projects.
-    </p>
+    <h2>Образовательные программы</h2>
+    <div class="card" style="max-width:800px; margin:auto; text-align:center;">
+        <p>
+            Профессиональные курсы по Data Science и машинному обучению доступны на платформе Stepik.
+        </p>
+        <a href="https://stepik.org/users/308359458/profile" class="btn">Курсы на Stepik</a>
+    </div>
+</section>
+
+<section>
+    <h2>Контакты</h2>
+    <div class="card contacts" style="max-width:800px; margin:auto;">
+        <a href="https://youtube.com/SENATOROV" target="_blank">YouTube канал</a>
+        <a href="https://t.me/RuslanSenatorov" target="_blank">Telegram руководителя организации</a>
+        <a href="https://t.me/SENATOROVAI" target="_blank">Telegram школы</a>
+        <a href="https://github.com/SENATOROVAI" target="_blank">GitHub организация</a>
+    </div>
 </section>
 
 <footer>
     <p>
-        © 2026 SenatorovAI — Data Science Division | 
-        <a href="https://github.com/SENATOROVAI">GitHub Organization</a>
+        © 2026 SenatorovAI — AI подразделение IT‑холдинга. Все права защищены.
     </p>
 </footer>
 
