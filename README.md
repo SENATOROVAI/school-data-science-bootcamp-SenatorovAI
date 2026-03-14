@@ -196,9 +196,7 @@ feature/article-topic
 
 Файл changelog будет доступен здесь:
 
-```
-CHANGELOG.md
-```
+https://senatorovai.com/changelog
 
 ---
 
