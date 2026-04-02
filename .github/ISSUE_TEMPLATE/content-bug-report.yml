@@ -46,45 +46,6 @@ body:
       required: true
 
   - type: textarea
-    id: quote_or_fragment
-    attributes:
-      label: Цитата или проблемный фрагмент
-      description: Если можете, вставьте текст, формулу или кусок страницы, где видна проблема.
-      placeholder: Скопируйте сюда проблемный фрагмент текста, формулы или HTML-отрезок.
-
-  - type: textarea
-    id: reproduction_steps
-    attributes:
-      label: Как воспроизвести
-      description: Напишите по шагам, как увидеть проблему.
-      placeholder: |
-        1. Открыть страницу
-        2. Доскроллить до блока ...
-        3. Нажать на ...
-        4. Увидеть некорректное отображение
-    validations:
-      required: true
-
-  - type: dropdown
-    id: device_type
-    attributes:
-      label: Где вы заметили проблему
-      options:
-        - Только на компьютере
-        - Только на телефоне
-        - И на компьютере, и на телефоне
-        - Не уверен(а)
-    validations:
-      required: true
-
-  - type: input
-    id: browser
-    attributes:
-      label: Браузер и ОС
-      description: Укажите браузер, версию и операционную систему, если знаете.
-      placeholder: Например, Chrome 135 на macOS / Firefox на Windows 11 / Safari на iPhone
-
-  - type: textarea
     id: screenshots
     attributes:
       label: Скриншоты или видео
@@ -108,6 +69,4 @@ body:
         - label: Я приложил(а) ссылку на страницу с проблемой.
           required: true
         - label: Я приложил(а) скриншот или другое наглядное подтверждение.
-          required: true
-        - label: Я описал(а), как воспроизвести проблему.
           required: true
