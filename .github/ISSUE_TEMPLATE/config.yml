@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Общая ссылка на создание issue
+    url: https://github.com/SENATOROVAI/school-data-science-bootcamp-SenatorovAI/issues/new/choose
+    about: Если проблема не подходит под шаблон, откройте список доступных форм.

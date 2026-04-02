@@ -1,0 +1,113 @@
+name: Сообщить об ошибке в статье
+description: Сообщите об опечатке, проблеме с формулой, кодом или отображением страницы.
+title: "[Ошибка в статье]: "
+labels:
+  - bug
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за репорт. Чем точнее описание, тем быстрее мы сможем исправить проблему.
+
+        Пожалуйста, приложите скриншоты и укажите ссылку на страницу, где возникла ошибка.
+
+  - type: input
+    id: article_url
+    attributes:
+      label: Ссылка на страницу
+      description: Вставьте полный URL статьи или страницы, где вы нашли проблему.
+      placeholder: https://senatorovai.com/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Тип проблемы
+      description: Выберите наиболее подходящий вариант.
+      options:
+        - Опечатка или неточность в тексте
+        - Проблема с формулой или LaTeX
+        - Ошибка в коде или примере
+        - Проблема с вёрсткой или стилями
+        - Не работает кнопка, ссылка или попап
+        - Другое
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Что не так
+      description: Коротко опишите, в чём именно ошибка.
+      placeholder: Например, формула отображается сырой строкой, ссылка ведёт не туда, код не совпадает с объяснением.
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote_or_fragment
+    attributes:
+      label: Цитата или проблемный фрагмент
+      description: Если можете, вставьте текст, формулу или кусок страницы, где видна проблема.
+      placeholder: Скопируйте сюда проблемный фрагмент текста, формулы или HTML-отрезок.
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Как воспроизвести
+      description: Напишите по шагам, как увидеть проблему.
+      placeholder: |
+        1. Открыть страницу
+        2. Доскроллить до блока ...
+        3. Нажать на ...
+        4. Увидеть некорректное отображение
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device_type
+    attributes:
+      label: Где вы заметили проблему
+      options:
+        - Только на компьютере
+        - Только на телефоне
+        - И на компьютере, и на телефоне
+        - Не уверен(а)
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Браузер и ОС
+      description: Укажите браузер, версию и операционную систему, если знаете.
+      placeholder: Например, Chrome 135 на macOS / Firefox на Windows 11 / Safari на iPhone
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоты или видео
+      description: Перетащите изображения прямо в это поле или вставьте ссылки на них.
+      placeholder: Прикрепите скриншоты, где хорошо видно проблему.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: Как должно быть
+      description: Если понимаете ожидаемое поведение, кратко опишите его.
+      placeholder: Например, формула должна рендериться как MathJax, а не как сырой LaTeX.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Перед отправкой
+      options:
+        - label: Я приложил(а) ссылку на страницу с проблемой.
+          required: true
+        - label: Я приложил(а) скриншот или другое наглядное подтверждение.
+          required: true
+        - label: Я описал(а), как воспроизвести проблему.
+          required: true
