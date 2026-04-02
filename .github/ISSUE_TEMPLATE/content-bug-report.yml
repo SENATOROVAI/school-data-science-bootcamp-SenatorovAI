@@ -54,13 +54,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: expected_result
-    attributes:
-      label: Как должно быть
-      description: Если понимаете ожидаемое поведение, кратко опишите его.
-      placeholder: Например, формула должна рендериться как MathJax, а не как сырой LaTeX.
-
   - type: checkboxes
     id: checks
     attributes:
